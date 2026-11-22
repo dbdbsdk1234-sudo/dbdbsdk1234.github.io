@@ -1,6 +1,6 @@
+<!DOCTYPE html>
 <html lang="ko">
-<head><!DOCTYPE html>
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>★ 유윤아 포트폴리오 | 사업기획 & 데이터 분석</title>
@@ -96,7 +96,7 @@
             <!-- PART 1: 유윤아 핵심 역량 -->
             <section id="intro" class="mb-20 pt-4">
                 <div class="primary-accent p-8 sm:p-12 rounded-3xl shadow-xl text-white border border-gray-800">
-                    <h2 class="text-3xl sm:text-4xl font-extrabold mb-5 tracking-tight">★ 유윤아의 포트폴리오에 오신걸 환영합니다.</h2>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold mb-5 tracking-tight">안녕하세요. 유윤아의 포트폴리오입니다.</h2>
                     <div class="flex flex-wrap items-center gap-2.5 mb-7">
                         <span class="text-sm sm:text-base font-bold bg-white text-gray-900 px-3.5 py-1.5 rounded-full shadow-sm">#꾸준함</span>
                         <span class="text-sm sm:text-base font-bold bg-white text-gray-900 px-3.5 py-1.5 rounded-full shadow-sm">#적극성</span>
@@ -107,7 +107,7 @@
                         주어진 업무의 목적이 무엇일지 고민하고, '최선'을 위해 노력하는 지원자 유윤아입니다.
                     </p> 
                     <div class="text-right italic font-medium text-xs sm:text-sm text-gray-400 mb-8">
-                        MOTTO: "부딪혀보기 전에 불가능을 이야기하지 않는다"
+                        MOTTO: "직접 부딪혀 보기 전에 불가능을 이야기하지 않는다"
                     </div>
                     
                     <div class="bg-white/5 border border-white/15 p-6 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6">
@@ -185,7 +185,7 @@
                         <ul class="space-y-2.5 text-sm text-gray-700">
                             <li class="flex items-start bg-gray-50 p-2.5 rounded-xl border border-gray-100">
                                 <span class="font-bold text-gray-900 w-24 shrink-0">Excel</span>
-                                <span>피벗테이블, XLOOKUP, SUMIFS, 조건부 서식, 함수 사용 가능</span>
+                                <span>피벗테이블, SUMIFS, 조건부 서식, 함수 사용 가능</span>
                             </li>
                             <li class="flex items-start bg-gray-50 p-2.5 rounded-xl border border-gray-100">
                                 <span class="font-bold text-gray-900 w-24 shrink-0">PowerPoint</span>
@@ -242,11 +242,12 @@
             title: '유윤아 프로필',
             name: '유윤아',
             englishName: 'YUNA YU',
-            motto: '부딪혀보기 전에 불가능을 이야기하지 않는다',
+            motto: '직접 부딪혀 보기 전에 불가능을 이야기하지 않는다',
             school: '상명대학교 졸업',
             major: '글로벌경영학과',
             doubleMajor: '빅데이터융합학부',
             gpa: '3.83 / 4.5',
+            englishScore: 'TOEIC Speaking 120점',
             birth: '2002.05.13',
             email: 'dbdbsdk87@naver.com',
             active: [
@@ -267,47 +268,6 @@
             { name: '전산회계 2급', date: '2021.12' }
         ];
 
-        const awards = [
-            {
-                id: 'a1',
-                title: 'HIRA 빅데이터 경진대회 우수상',
-                summary: '환자의 편의성을 높이는 어지럼증 진단 보조 AI 모델 및 건강 케어 서비스 플랫폼을 기획하여 우수상을 수상했습니다.',
-                tags: ['의료 데이터 분석', '분류 모델', '플랫폼 기획', '경진대회'],
-                period: '25.08.18 ~ 25.08.22',
-                role: '분석 데이터 선정 및 분석, 진료과 추천 서비스 기획',
-                coreResult: '어지럼증 진단 AI 모델 및 서비스 기획',
-                metrics: [
-                    { value: 'CatBoost', label: '비선형 의료 분류 모델 도입' },
-                    { value: '3대 핵심기능', label: '환자 맞춤형 케어 플랫폼 기획' }
-                ],
-                sections: [
-                    { 
-                        title: '프로젝트 배경 및 목적', 
-                        content: `• <strong>배경:</strong> 건강보험심사평가원 공공데이터를 활용해 환자의 병원 이용 편의를 돕고자 참가<br>
-                                  • <strong>문제 발견:</strong> 의료 데이터를 분석해보니, 어지럼증 환자들이 원인과 맞지 않는 엉뚱한 진료과를 먼저 찾아 치료가 늦어지는 문제 확인<br>
-                                  • <strong>목표:</strong> 증상에 맞는 최적의 진료과를 추천하고 건강 관리를 돕는 서비스 모델 기획` 
-                    },
-                    { 
-                        title: '주요 수행 과정', 
-                        content: `• <strong>머신러닝 모델 구축:</strong> 초기 기본 분석의 한계를 보완하기 위해 복잡한 의료 변수를 잘 다루는 CatBoost 모델 적용<br>
-                                  • <strong>환자 케어 플랫폼 구성:</strong><br>
-                                    - 비슷한 증상을 겪은 환자들의 정보 공유 공간 마련<br>
-                                    - 지속 관리가 필요한 고위험군 환자 선별 기준 수립<br>
-                                    - 기존 약물 복용 기록 데이터를 바탕으로 진료 방향 가이드 설계` 
-                    },
-                    { 
-                        title: '배운점 & 역량', 
-                        content: `<span class="font-bold text-gray-900">[배운점]</span><br>
-                                  • 분석 기준을 어떻게 잡느냐에 따라 도출되는 결과가 크게 달라진다는 점을 체감함<br>
-                                  • 방대한 데이터 속에서 실제 문제 해결에 필요한 의미 있는 단서를 찾아내는 훈련을 함<br>
-                                  • 어려운 분석 과정에서도 팀원들과 끊임없이 회의하고 맞춰가며 협업의 중요성을 배움<br><br>
-                                  <span class="font-bold text-gray-900">[나의 역량]</span><br>
-                                  • 데이터 분석 결과를 책상에만 두지 않고, 실제 사용자가 체감할 수 있는 서비스 모델로 연결하는 기획 역량을 키움` 
-                    }
-                ]
-            }
-        ];
-
         const projects = [
             // ==========================================
             // [카테고리 1: 학부 프로젝트]
@@ -316,15 +276,15 @@
                 id: 'p6',
                 category: 'undergrad',
                 categoryLabel: '학부 프로젝트 01',
-                title: '캡스톤 디자인: \'상상코칭\' 기업 분석 및 전략 제언',
-                summary: '기업 및 시장 분석을 바탕으로 학습 코칭 플랫폼의 핵심 타겟을 재정립하고 서비스를 재구성한 산학 협력 프로젝트입니다.',
-                tags: ['산학협력', 'SWOT 분석', '5 Forces', '타겟 재정립', '서비스 재구성', '컨설팅'],
+                title: "캡스톤 디자인: '상상코칭' 기업 분석 및 전략 제언",
+                summary: '학생 수 감소와 사교육 시장 경쟁 심화로 성장이 둔화된 학습 코칭 기업의 문제를 해결하기 위해, 현직 실무자 인터뷰를 기반으로 중학생 핵심 타겟 재설정 및 통합 코칭 전략을 제언했습니다.',
+                tags: ['기업 분석', '전략 제언', '타겟 재설정', '영업 활성화', '현직자 협업'],
                 period: '팀 활동 · 2025.03 ~ 2025.06',
-                role: '시장 분석에 따른 타겟 재정립 및 기존 서비스 재구성',
+                role: '기업 및 시장 내외부 분석, 영업 활성화 및 통합 코칭 전략 도출',
                 coreResult: '팀의 전략이 최종 채택',
                 metrics: [
-                    { value: '중학생 타겟', label: '핵심 고객층 세분화 및 재정립' },
-                    { value: '원스톱 결합', label: '코칭·진로·교과 통합 패키지' }
+                    { value: '팀 전략 최종 채택', label: '현직 실무자 호평 및 실현 가능성 인정' },
+                    { value: '영업-코치 매칭', label: '추가 채용 없는 기존 자원 조합 시너지' }
                 ],
                 sections: [
                     { 
@@ -338,9 +298,8 @@
                                   • <strong>타겟 고객 재설정:</strong> "성적은 올리고 싶지만 혼자서 공부 계획을 세우지 못하는 중학생"으로 타겟 재정립` 
                     },
                     { 
-                        title: '솔루션: 서비스 재구성', 
-                        content: `• <strong>패키지 결합:</strong> 공부 습관 코칭 + 진로 상담 + 교과 학습을 하나로 묶어 학부모가 믿고 맡길 수 있는 원스톱 서비스로 재구성함<br>
-                                  • <strong>영업 활성화 연계:</strong> 기업의 큰 고민이었던 영업부 활성화를 위해, 상담 후 전담 코치를 직접 배정해주는 영업-코치 매칭 시스템을 제안함` 
+                        title: '실행 전략: 영업 활성화 연계', 
+                        content: `• <strong>영업 활성화 연계:</strong> 기업의 큰 고민이었던 영업부 활성화를 위해, 상담 후 전담 코치를 직접 배정해주는 영업-코치 매칭 시스템을 제안함` 
                     },
                     { 
                         title: '결론', 
@@ -348,12 +307,9 @@
                                   • 현직 실무자로부터 "회사가 고민하던 부분을 짚어낸 실현 가능한 전략"이라는 호평을 받음` 
                     },
                     { 
-                        title: '배운점 & 나의 역량', 
-                        content: `<span class="font-bold text-gray-900">[배운점]</span><br>
-                                  • 시장 분석뿐만 아니라, 기업 내부의 인력과 비용 여건과 같은 내부 요인도 고려될 때 실현 가능한 전략이 나온다는 점을 배움<br>
-                                  • 현직 실무자 인터뷰를 통해 현장의 생생한 고민을 듣고 해결책에 반영하는 협업 방식을 익힘<br><br>
-                                  <span class="font-bold text-gray-900">[나의 역량]</span><br>
-                                  • 기업의 내부 자원과 시장 환경을 정밀하게 분석해 서비스 구조를 고객 중심으로 재설계하고 실질적인 사업 전략을 도출하는 역량을 키움` 
+                        title: '배운점', 
+                        content: `• 시장 분석뿐만 아니라, 기업 내부의 인력과 비용 여건과 같은 내부 요인도 고려될 때 실현 가능한 전략이 나온다는 점을 배움<br>
+                                  • 현직 실무자 인터뷰를 통해 현장의 생생한 고민을 듣고 해결책에 반영하는 협업 방식을 익힘` 
                     }
                 ]
             },
@@ -361,22 +317,22 @@
                 id: 'p7',
                 category: 'undergrad',
                 categoryLabel: '학부 프로젝트 02',
-                title: '캡스톤 디자인: 글로벌 주류 시장 분석 및 전통주 해외 진출 전략',
-                summary: '전통주 기업의 해외 진출을 위해 미국, 중국, 일본 시장을 다각도로 분석하고, 실무자 인터뷰를 기반으로 맞춤형 마케팅 및 유통 진출 전략을 제언했습니다.',
+                title: '캡스톤 디자인: 글로벌 주류 시장 분석 및 전통주 해외 마케팅·유통 전략',
+                summary: '전통주 기업의 해외 진출을 위해 미국, 중국, 일본의 주류 시장을 분석하고, 실무자 인터뷰를 기반으로 마케팅 및 유통 진출 전략을 제언했습니다.',
                 tags: ['해외 진출 전략', '시장 환경 분석', '수익 구조 다변화', '실무자 인터뷰', '채널 전략'],
-                period: '2024.09 ~ 2024.12',
-                role: '주요 시장 분석 및 국가별 맞춤형 진출 시나리오 수립',
-                coreResult: '3개국 맞춤형 단계별 시장 침투 로드맵 도출',
+                period: '팀 활동 · 2024.09 ~ 2024.12',
+                role: '시장 분석 및 국가별 진출 시나리오 수립',
+                coreResult: '3개국 단계별 시장 진출 로드맵 도출',
                 metrics: [
-                    { value: '88.3% ➔ 다변화', label: '국내 편중 매출 구조 개선 전략' },
+                    { value: '88% ➔ 다변화', label: '국내 편중 매출 구조 개선 전략' },
                     { value: '미국·중국·일본', label: '3개국 맞춤형 채널·제품 로드맵' }
                 ],
                 sections: [
                     { 
                         title: '배경 및 실무 데이터 확보', 
-                        content: `• <strong>배경:</strong> 기업 매출의 88.3%가 국내에 쏠려 있어, 성장을 위해 해외 시장 진출이 꼭 필요한 상황이었음<br>
-                                  • <strong>통계 분석:</strong> 각국의 수입 통계와 주류 유통 흐름을 조사함<br>
-                                  • <strong>실무자 인터뷰:</strong> 인터넷 검색의 한계를 넘어 해당 기업 담당자에게 직접 연락해 수출 방식, 현지 유통 비중 등 생생한 현장 정보를 얻어냄` 
+                        content: `• <strong>배경:</strong> 기존 진출국의 매출 부진을 개선하고, 전체 매출의 88%가 국내에 집중된 편중 위험을 낮추기 위한 해외 진출 전략을 수립함<br>
+                                  • <strong>시장 분석:</strong> 각국의 전통주 수입 및 유통 채널 분석<br>
+                                  • <strong>실무자 인터뷰:</strong> 인터넷 검색의 한계를 해결하기 위해 해당 기업 담당자에게 직접 연락해 수출 방식, 현지 유통 비중 등 생생한 현장 정보를 얻어냄` 
                     },
                     { 
                         title: '국가별 시장 환경 분석', 
@@ -388,18 +344,17 @@
                         title: '단계별 전략 도출', 
                         content: `• <strong>1단계 미국:</strong> 유명 한식 브랜드와 협업하고, 쌀로 만든 건강한 프리미엄 술이라는 점을 내세워 틈새시장 공략<br>
                                   • <strong>2단계 중국:</strong> 술을 따뜻하게 데워 마시는 현지 문화에 맞춰 1인용 소포장 제품을 내고 온라인 판매에 집중<br>
-                                  • <strong>3단계 일본:</strong> 무리하게 새 매장을 늘리기보다 기존 직영점을 물류 거점과 홍보 창구로 활용하는 Asset Light(자산 경량화) 전략 추진` 
+                                  • <strong>3단계 일본:</strong> 무리하게 새 매장을 늘리기보다 기존 직영점을 물류 거점과 홍보 창구로 활용하는 Asset Light 전략 추진` 
                     },
                     { 
                         title: '결론', 
-                        content: `• 세 나라에 똑같은 방식을 쓰지 않고, 각국의 유통 구조와 음주 문화에 맞춘 차별화된 진출 방안을 제시함<br>
-                                  • 비용 부담을 줄이면서 효율적으로 현지에 안착할 수 있는 현실적인 해외 진출 로드맵을 완성함` 
+                        content: `• 각국의 유통 구조와 음주 문화에 맞춘 차별화된 진출 방안을 제시<br>
+                                  • 비용 부담을 줄이면서 효율적으로 현지에 안착할 수 있는 현실적인 해외 진출 로드맵을 구상` 
                     },
                     { 
                         title: '배운점 & 나의 역량', 
                         content: `<span class="font-bold text-gray-900">[배운점]</span><br>
-                                  • 국가마다 유통 환경과 고객 성향이 전혀 다르기 때문에 사업 전략도 철저히 현지화되어야 함을 배움<br>
-                                  • 담당자 인터뷰가 어려워 보였지만, 직접 문을 두드려보고 부딪혀보며 적극적인 실행력의 소중함을 깨달음<br><br>
+                                  • 국가마다 유통 환경과 고객 성향이 다르기 때문에 사업 전략의 현지화가 필요함을 배움<br><br>
                                   <span class="font-bold text-gray-900">[나의 역량]</span><br>
                                   • 현지 유통 구조와 소비 트렌드를 다각도로 조사하고 실무자 인터뷰로 핵심 자료를 확보해 단계별 실행 전략을 도출하는 기획력을 기름` 
                     }
@@ -411,8 +366,8 @@
                 categoryLabel: '학부 프로젝트 03',
                 title: 'ROE & 모멘텀 복합지표 투자 포트폴리오 구성 및 평가',
                 summary: 'ROE와 모멘텀 지표를 활용해 투자 포트폴리오를 구성하고, 과거 데이터를 기반으로 수익률, 변동성을 비교 분석했습니다. 단일 지표와 복합지표의 성과 차이를 검증하며 수익성과 리스크를 함께 고려하는 분석 역량을 강화했습니다.',
-                tags: ['재무 데이터 분석', '수익성 검증', '복수지표 포트폴리오', '리스크관리', 'Excel 모델링', 'DataGuide'],
-                period: '2025.09 ~ 2025.12',
+                tags: ['재무 데이터 분석', '수익성 검증', '복수지표 포트폴리오', '리스크관리', 'Excel', 'DataGuide'],
+                period: '팀 활동 · 2025.09 ~ 2025.12',
                 role: '특정 기간의 ROE&모멘텀 포트폴리오 구성 및 수익률 평가지표 산출',
                 coreResult: '복합지표 도입을 통한 샤프비율 0.06 개선 및 변동성 완화 입증',
                 metrics: [
@@ -453,17 +408,17 @@
                 title: '중고거래 플랫폼 신사업 기획',
                 summary: '주식회사 \'당근\'의 사업 구조와 고객 이용 행태를 분석하고, 신규 수익원 발굴을 위한 보험·배달 서비스를 제안했습니다. 서비스별 타깃 고객, 수익모델, 비용 구조 및 기대효과를 비교해 사업 타당성을 검토하고 신사업 추진 방향을 제시했습니다.',
                 tags: ['사업 타당성 분석', '신사업 기획', '비즈니스 모델(BM)', '손익분기점(BEP)', '수익 다각화'],
-                period: '2024.09 ~ 2024.12',
+                period: '팀 활동 · 2024.09 ~ 2024.12',
                 role: '팀 리드, 중고거래 플랫폼 문제점 분석 및 신규 수익 모델 기획',
                 coreResult: '수익 다각화를 위한 2가지 신사업 BM 도출 및 BEP 산출',
                 metrics: [
-                    { value: '2대 신사업 BM', label: '건별 안심보험 & 지역 배달 중개' },
+                    { value: '신사업 BM', label: '건별 안심보험 & 지역 배달 중개' },
                     { value: 'BEP 타당성 검증', label: '초기 비용·예상 매출 손익분기 산출' }
                 ],
                 sections: [
                     { 
                         title: '배경 및 현황 분석', 
-                        content: `• <strong>배경:</strong> 플랫폼 매출이 지역 광고 하나에만 편중된 불안정성을 해결하고 새로운 수익원을 발굴하고자 함<br>
+                        content: `• <strong>배경:</strong> 플랫폼 매출이 광고에만 편중된 불안정성을 해결하고 새로운 수익원을 발굴하고자 함<br>
                                   • <strong>사용자 관점:</strong> 허위 매물, 선입금 사기 피해가 잦고 보복성 비매너 평가 불만이 존재함<br>
                                   • <strong>기업 관점:</strong> 거래 건수가 늘어나도 직접 수수료 매출로 이어지지 못하는 구조적 한계 파악` 
                     },
@@ -493,7 +448,7 @@
                 title: '전기차 산업 및 주요 기업 경쟁 전략 분석',
                 summary: '친환경 자동차 패러다임 전환에 발맞춰 글로벌 전기차 시장 동향을 조사하고 테슬라, 현대기아 등 주요 기업의 SWOT 분석을 수행했습니다.',
                 tags: ['산업 분석', '경쟁사 분석', 'SWOT 분석', '제조업 패러다임', '거시 환경 분석'],
-                period: '2021.03 ~ 2021.06',
+                period: '팀 활동 · 2021.03 ~ 2021.06',
                 role: '글로벌 전기차 시장 동향 조사 및 주요 기업 경쟁력(SWOT) 분석',
                 coreResult: '주요 완성차 기업 SWOT 분석 및 미래 핵심 경쟁 과제 도출',
                 metrics: [
@@ -531,11 +486,11 @@
                 category: 'undergrad',
                 categoryLabel: '학부 프로젝트 06',
                 title: 'APPLE 글로벌 공급망 분석',
-                summary: '하버드 비즈니스 케이스를 활용하여 Apple의 공급망 리스크를 분석하고, 지정학적 리스크와 ESG를 고려한 다변화 전략을 제언했습니다.',
-                tags: ['SCM 공급망관리', '리스크 관리', '케이스 스터디', '글로벌 전략', 'China+1 로드맵'],
-                period: '2024.03 ~ 2024.06',
+                summary: '하버드 비즈니스 케이스 분석을 통해 Apple의 중국 편중 공급망 리스크를 진단하고, 원가 경쟁력을 유지하면서 지정학적 리스크를 분산하는 다변화 전략을 제언했습니다.',
+                tags: ['SCM 공급망관리', '리스크 관리', '케이스 스터디', '글로벌 전략', 'China+1 전략'],
+                period: '팀 활동 · 2024.03 ~ 2024.06',
                 role: '사례 분석 및 글로벌 공급망(SCM) 다변화 전략 도출',
-                coreResult: '단일 실패점 극복을 위한 단계별 점진적 공급망 다각화 로드맵 수립',
+                coreResult: '지정학적 리스크 분산 및 원가 효율 유지를 위한 China+1 공급망 다변화 전략 수립',
                 metrics: [
                     { value: 'China + 1', label: '인도·베트남·멕시코 점진적 다변화' },
                     { value: 'AI·블록체인', label: '공급망 투명성 및 예측 유지보수 도입' }
@@ -554,14 +509,14 @@
                     { 
                         title: '결론', 
                         content: `• 급격한 공장 이전에 따른 막대한 비용과 품질 저하 위험을 방지함<br>
-                                  • 기존 원가 경쟁력을 지키면서 지정학적 리스크를 분산시키고 탄소중립 목표까지 달성하는 'China+1 점진적 로드맵'을 완성함` 
+                                  • 기존 원가 경쟁력을 지키면서 지정학적 리스크를 효과적으로 분산시키는 'China+1 전략' 제안` 
                     },
                     { 
                         title: '배운점 & 나의 역량', 
                         content: `<span class="font-bold text-gray-900">[배운점]</span><br>
                                   • 회사의 기존 강점(운영 효율성)을 잃지 않으면서 외부 위험을 서서히 분산시키는 균형 잡힌 전략 수립의 중요성을 배움<br><br>
                                   <span class="font-bold text-gray-900">[나의 역량]</span><br>
-                                  • 글로벌 비즈니스 환경의 공급망 리스크 요인을 체계적으로 진단하고 단계별 실행 로드맵을 설계하는 역량을 키움` 
+                                  • 글로벌 비즈니스 환경의 공급망 리스크 요인을 체계적으로 진단하고 대안 거점을 비교·분석해 다변화 전략을 도출하는 역량을 키움` 
                     }
                 ]
             },
@@ -603,7 +558,7 @@
                         content: `<span class="font-bold text-gray-900">[배운점]</span><br>
                                   • 분석 기준을 어떻게 잡느냐에 따라 도출되는 결과가 크게 달라진다는 점을 체감하고 데이터 속에서 문제 해결 단서를 찾는 훈련을 함<br><br>
                                   <span class="font-bold text-gray-900">[나의 역량]</span><br>
-                                  • 데이터 분석 결과를 책상에만 두지 않고, 실제 사용자가 체감할 수 있는 서비스 모델로 연결하는 기획 역량을 키움` 
+                                  • 데이터 분석 결과를 실제 사용자가 체감할 수 있는 서비스 모델로 연결하는 기획 역량을 키움` 
                     }
                 ]
             },
@@ -656,10 +611,10 @@
                 categoryLabel: '부트캠프 01',
                 title: 'IT 서비스 기획 부트캠프',
                 summary: '금융 정보와 투자에 대한 진입장벽을 낮추기 위해 사용자 성향별 맞춤 학습 서비스 모델을 기획했습니다. 사용자 행동 패턴을 기반으로 유형별 기능 체계를 구조화하고, 개발 요구사항 정의서를 작성하여 프로젝트 실행 기반을 구축했습니다.',
-                tags: ['서비스 기획', '수익모델 수립', '데이터 모델링', 'ERD', 'PRD', '요구사항 정의'],
+                tags: ['서비스 기획', '수익모델 수립', 'ERD', 'PRD', '요구사항 정의'],
                 period: '2025.09 ~ 2025.10',
-                role: '메인 기획, 캐릭터 컨셉 설계, ERD 작성',
-                coreResult: '수익 모델을 포함한 서비스 기획 및 실무 개발 문서(ERD/PRD) 완성',
+                role: '기획, 캐릭터 컨셉 설계, ERD 작성',
+                coreResult: '서비스 기획 및 실무 개발 문서(ERD/PRD) 작성',
                 metrics: [
                     { value: '6가지 투자유형', label: '연령·자본·성향 기반 맞춤 분류' },
                     { value: 'ERD · PRD 완성', label: 'DB 구조도 및 개발 요구사항 문서화' }
@@ -678,15 +633,14 @@
                     },
                     { 
                         title: '개발 실무 문서화 및 결론', 
-                        content: `• 개발자가 즉시 구현할 수 있도록 기능 명세와 규칙을 담은 <strong>요구사항 정의서(PRD)</strong>와 데이터 구조도<strong>(ERD)</strong>를 직접 작성함<br>
-                                  • 사용자 친화적 UX에 명확한 수익 모델과 개발 명세서를 결합하여 실행 가능한 프로젝트 기반을 구축함` 
+                        content: `• 개발자가 즉시 구현할 수 있도록 기능 명세와 규칙을 담은 <strong>요구사항 정의서(PRD)</strong>와 데이터 구조도<strong>(ERD)</strong>를 직접 작성함` 
                     },
                     { 
                         title: '배운점 & 나의 역량', 
                         content: `<span class="font-bold text-gray-900">[배운점]</span><br>
-                                  • 아이디어를 넘어 회사의 이익과 개발 제약 조건까지 조율해야 진짜 기획이 됨을 배우고 피드백을 빠르게 반영하는 태도를 기름<br><br>
+                                  • 개발자와의 소통을 위해 ERD와 PRD를 직접 작성해 보며, 개발 관점에서 기획의 구현 가능성을 판단하는 시각을 배움<br><br>
                                   <span class="font-bold text-gray-900">[나의 역량]</span><br>
-                                  • 서비스를 수익성 있는 비즈니스 모델로 고도화하고, ERD·PRD 등 실무 개발 문서로 꼼꼼히 정리해 실행력을 높이는 역량을 키움` 
+                                  • 서비스를 수익화할 수 있는 방안을 구체화하고, 실제 구현을 위한 실무 개발 문서로 정리하며 서비스 기획 역량을 기름` 
                     }
                 ]
             }
@@ -763,6 +717,10 @@
                                         <svg class="w-5 h-5 mr-3 text-gray-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                                         <span class="font-semibold text-sm">학점: ${profile.gpa}</span>
                                     </div>
+                                    <div class="flex items-center text-gray-800 bg-white px-3.5 py-2.5 rounded-xl border border-gray-200 shadow-sm">
+                                        <svg class="w-5 h-5 mr-3 text-gray-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path></svg>
+                                        <span class="font-semibold text-sm">어학: ${profile.englishScore}</span>
+                                    </div>
                                     <div class="pt-4 space-y-2 border-t border-gray-200">
                                         <div class="flex items-center text-gray-700 text-sm">
                                             <svg class="w-5 h-5 mr-3 text-gray-700 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
@@ -776,8 +734,24 @@
                                 </div>
                             </div>
 
-                            <!-- Right Side: Active, Certifications, Career -->
+                            <!-- Right Side: Career, Active, Certifications -->
                             <div class="lg:w-2/3 flex flex-col justify-between space-y-6">
+                                <!-- Career Section -->
+                                <div class="bg-gray-50 p-6 sm:p-7 rounded-2xl border border-gray-200">
+                                    <h4 class="text-lg font-extrabold text-gray-900 mb-3 flex items-center">
+                                        <span class="w-2 h-2 bg-gray-900 rounded-full mr-2.5"></span>
+                                        Career
+                                    </h4>
+                                    <ul class="space-y-2.5 pl-4">
+                                        ${profile.career.map(c => `
+                                            <li class="flex flex-col sm:flex-row sm:items-center text-sm sm:text-base text-gray-700 gap-1 sm:gap-4">
+                                                <span class="font-bold text-gray-900 shrink-0">• ${c.period}</span>
+                                                <span class="text-gray-700">${c.desc}</span>
+                                            </li>
+                                        `).join('')}
+                                    </ul>
+                                </div>
+
                                 <!-- Active Section -->
                                 <div class="bg-gray-50 p-6 sm:p-7 rounded-2xl border border-gray-200">
                                     <h4 class="text-lg font-extrabold text-gray-900 mb-3 flex items-center">
@@ -810,22 +784,6 @@
                                         `).join('')}
                                     </ul>
                                 </div>
-
-                                <!-- Career Section -->
-                                <div class="bg-gray-50 p-6 sm:p-7 rounded-2xl border border-gray-200">
-                                    <h4 class="text-lg font-extrabold text-gray-900 mb-3 flex items-center">
-                                        <span class="w-2 h-2 bg-gray-900 rounded-full mr-2.5"></span>
-                                        Career
-                                    </h4>
-                                    <ul class="space-y-2.5 pl-4">
-                                        ${profile.career.map(c => `
-                                            <li class="flex flex-col sm:flex-row sm:items-center text-sm sm:text-base text-gray-700 gap-1 sm:gap-4">
-                                                <span class="font-bold text-gray-900 shrink-0">• ${c.period}</span>
-                                                <span class="text-gray-700">${c.desc}</span>
-                                            </li>
-                                        `).join('')}
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -835,7 +793,6 @@
                 if (!project) { goBackToDashboard(); return; }
                 
                 const isAward = project.category === 'competition' && project.id === 'a1';
-                const periodLabel = isAward ? '대회 진행 기간' : '진행 기간';
                 const breadcrumbEl = document.getElementById('detail-breadcrumb');
                 if (breadcrumbEl) {
                     breadcrumbEl.textContent = project.categoryLabel || 'PROJECT DETAIL';
